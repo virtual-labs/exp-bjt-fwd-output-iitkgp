@@ -2,115 +2,125 @@
   {
 	  "version": 2.0,
   "questions": [
-    {
-      "question": "1. What does the Gummel plot method characterize in a BJT?",
+   {
+      "questionNumber": 1,
+      "question": "A BJT with a very *large* Forward Early Voltage (`VAF`) will show output curves in the active region that are...",
       "answers": {
-        "a": "Voltage gain",
-        "b": "Current gain",
-        "c": "Power gain",
-        "d": "Frequency gain"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. The Gummel plot is used to analyze the relationship between which of the following parameters?",
-      "answers": {
-        "a": "Base-emitter voltage (V_BE) and collector current (I_C)",
-        "b": "Base current (I_B) and collector current (I_C)",
-        "c": "Emitter current (I_E) and base current (I_B)",
-        "d": "Base-emitter voltage (V_BE) and base current (I_B)"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "3. What is typically plotted on the y-axis in a Gummel plot?",
-      "answers": {
-        "a": "Base current (I_B)",
-        "b": "Collector current (I_C)",
-        "c": "Base-emitter voltage (V_BE)",
-        "d": "Saturation current (I_S)"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. In the Gummel plot, the relationship between collector current (I_C) and base-emitter voltage (V_BE) shows what type of relationship?",
-      "answers": {
-        "a": "Exponential",
-        "b": "Linear",
-        "c": "Quadratic",
-        "d": "Logarithmic"
-      },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "5. What does the slope of the collector current (I_C) versus base-emitter voltage (V_BE) plot represent?",
-      "answers": {
-        "a": "Saturation current (I_S)",
-        "b": "Current gain (\u03b2)",
-        "c": "Emitter efficiency",
-        "d": "Thermal voltage (V_T)"
-      },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "6. How does the Gummel plot help in BJT characterization?",
-      "answers": {
-        "a": "By measuring thermal resistance",
-        "b": "By extracting parameters like saturation current and current gain",
-        "c": "By measuring power dissipation",
-        "d": "By analyzing frequency response"
+        "a": "very steep and sloped upwards.",
+        "b": "almost perfectly flat and horizontal.",
+        "c": "curved downwards at high voltages.",
+        "d": "spaced very close together."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "7. What parameter of a BJT is directly related to the ideality factor in the Gummel plot?",
+      "questionNumber": 2,
+      "question": "The parameter `RC`, or collector series resistance, is best extracted by analyzing which part of the output curve?",
       "answers": {
-        "a": "Saturation current (I_S)",
-        "b": "Base-emitter voltage (V_BE)",
-        "c": "Emitter efficiency",
-        "d": "Thermal voltage (V_T)"
+        "a": "The slope of the curve in the forward-active region.",
+        "b": "The 'knee' and the slope in the deep saturation region.",
+        "c": "The point where the curves break down at high voltage.",
+        "d": "The vertical spacing between adjacent curves."
       },
-      "correctAnswer": "a",
-      "difficulty": "advanced"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
     {
-      "question": "8. How can you determine the current gain (\u03b2) of a BJT from the Gummel plot?",
+      "questionNumber": 3,
+      "question": "What is a key difference in how Collector Resistance (`RC`) and Emitter Resistance (`RE`) affect the saturation region?",
       "answers": {
-        "a": "By calculating the slope of the base current (I_B) versus base-emitter voltage (V_BE) plot",
-        "b": "By calculating the slope of the collector current (I_C) versus base-emitter voltage (V_BE) plot",
-        "c": "By dividing base current (I_B) by collector current (I_C)",
-        "d": "By dividing collector current (I_C) by base current (I_B)"
+        "a": "`RC` only affects low base currents, while `RE` only affects high base currents.",
+        "b": "`RC`'s voltage drop depends only on collector current, while `RE`'s drop depends on the sum of collector and base currents.",
+        "c": "`RC` makes the saturation slope steeper, while `RE` makes it flatter.",
+        "d": "Only `RC` causes saturation; `RE` does not affect it."
       },
       "correctAnswer": "b",
       "difficulty": "advanced"
     },
     {
-      "question": "9. What does the term 'early effect' refer to in the context of BJTs?",
+      "questionNumber": 4,
+      "question": "If the vertical spacing between output curves *decreases* at high collector currents (for the same constant step in base current), what phenomenon is this visualizing?",
       "answers": {
-        "a": "Temperature dependence of collector current",
-        "b": "Voltage dependence of base current",
-        "c": "Voltage dependence of collector current",
-        "d": "Temperature dependence of base current"
+        "a": "The Early effect",
+        "b": "Avalanche breakdown",
+        "c": "Low-current beta roll-off",
+        "d": "High-current beta roll-off"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "questionNumber": 5,
+      "question": "If an output curve at a constant, high base current starts to bend *downward* at high collector-emitter voltages, what physical effect is this indicating?",
+      "answers": {
+        "a": "The Early effect",
+        "b": "Quasi-saturation",
+        "c": "Self-heating",
+        "d": "Low-current recombination"
       },
       "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "questionNumber": 6,
+      "question": "What is the main visual difference between the Early effect and avalanche breakdown on an output plot?",
+      "answers": {
+        "a": "The Early effect is a gentle, linear slope, while breakdown is a sharp, dramatic increase in current.",
+        "b": "The Early effect happens at low voltage, breakdown at high voltage.",
+        "c": "The Early effect is a sharp increase, breakdown is a gentle slope.",
+        "d": "They are two names for the same physical effect."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "questionNumber": 7,
+      "question": "The overall vertical position (magnitude) of the collector current curves for given base currents is determined by the ideal forward beta, `BF`. Where is this `BF` parameter itself primarily extracted?",
+      "answers": {
+        "a": "From the slope of the output curves in the saturation region.",
+        "b": "From the intersection point of the Early voltage.",
+        "c": "From the ratio of ideal currents on a forward Gummel plot.",
+        "d": "From the breakdown voltage."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "questionNumber": 8,
+      "question": "The 'quasi-saturation' or 'soft knee' effect, where the curve does not enter saturation sharply, is caused by the voltage drop across which parameter?",
+      "answers": {
+        "a": "`RB` (Base Resistance)",
+        "b": "`RE` (Emitter Resistance)",
+        "c": "`VAF` (Early Voltage)",
+        "d": "`RC` (Collector Resistance)"
+      },
+      "correctAnswer": "d",
       "difficulty": "advanced"
     },
     {
-      "question": "10. In the Gummel plot, the linear region where the base current (I_B) is proportional to base-emitter voltage (V_BE) is known as the ______ region.",
+      "questionNumber": 9,
+      "question": "What is the functional difference between the `BF` (Forward Beta) and `VAF` (Early Voltage) parameters as seen on the output plot?",
       "answers": {
-        "a": "Saturation",
-        "b": "Active",
-        "c": "Cut-off",
-        "d": "Breakdown"
+        "a": "`BF` sets the slope of the curves, while `VAF` sets the spacing between them.",
+        "b": "`BF` sets the spacing between curves, while `VAF` sets the slope of each curve.",
+        "c": "Both `BF` and `VAF` are used to set the slope of the curves.",
+        "d": "Both `BF` and `VAF` are used to set the spacing between curves."
       },
       "correctAnswer": "b",
-      "difficulty": "advanced"
+      "difficulty": "beginner"
+    },
+    {
+      "questionNumber": 10,
+      "question": "An 'ideal' BJT with no Early effect and no parasitic resistances would be shown on an output plot as...",
+      "answers": {
+        "a": "a set of perfectly flat, horizontal lines in the active region.",
+        "b": "a set of curves that all slope upwards steeply.",
+        "c": "a set of curves that meet at zero voltage.",
+        "d": "a single curve, regardless of base current."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     }
   ]
 }
