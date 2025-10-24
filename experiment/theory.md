@@ -3,7 +3,7 @@
 BJT Parameter Extraction from Forward Output Characteristics
 <div align="center">
     <img src="images/th5.png" alt="Threshold Voltage and Inversion charge">  
-      <p><strong>Fig. 1. Threshold Voltage and Inversion charge</strong></p>
+      <p><strong>Fig. 1. Forward I-V Characteristic & Parameter Extraction</strong></p>
 </div>
 
 ## Introduction
