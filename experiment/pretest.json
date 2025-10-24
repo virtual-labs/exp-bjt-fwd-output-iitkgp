@@ -1,39 +1,125 @@
-{
-  "version": 2.0,
+  {
+	  "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
+			"questionNumber": 1,
+			"question": "What two quantities are plotted against each other in a BJT's forward output characteristic curve?",
+			"answers": {
+				"a": "Collector current and Base current",
+				"b": "Collector current and Collector-emitter voltage",
+				"c": "Base current and Base-emitter voltage",
+				"d": "Collector-emitter voltage and Base-emitter voltage"
+			},
+			"correctAnswer": "b",
+			"difficulty": "beginner"
+		},
+		{
+			"questionNumber": 2,
+			"question": "When measuring the forward output characteristics, which quantity is stepped and held constant for each individual curve?",
+			"answers": {
+				"a": "The base-emitter voltage",
+				"b": "The base current",
+				"c": "The collector resistance",
+				"d": "The temperature"
+			},
+			"correctAnswer": "b",
+			"difficulty": "beginner"
+		},
+		{
+			"questionNumber": 3,
+			"question": "Which SPICE parameter models the upward slope of the collector current in the forward-active region?",
+			"answers": {
+				"a": "`BF` (Forward Beta)",
+				"b": "`RB` (Base Resistance)",
+				"c": "`VAF` (Forward Early Voltage)",
+				"d": "`IKF` (High-Injection Knee)"
+			},
+			"correctAnswer": "c",
+			"difficulty": "intermediate"
+		},
+		{
+			"questionNumber": 4,
+			"question": "What is the physical phenomenon responsible for the upward slope of the collector current, which is modeled by the Forward Early Voltage?",
+			"answers": {
+				"a": "Base-width modulation",
+				"b": "High-level injection",
+				"c": "Zener breakdown",
+				"d": "Emitter-base recombination"
+			},
+			"correctAnswer": "a",
+			"difficulty": "intermediate"
+		},
+		{
+			"questionNumber": 5,
+			"question": "How is the Forward Early Voltage (`VAF`) typically determined graphically from the output characteristics?",
+			"answers": {
+				"a": "By finding the slope of the curve in the saturation region.",
+				"b": "By extrapolating the sloped curves in the active region to where they meet at a single point on the negative voltage axis.",
+				"c": "By measuring the voltage where the collector current drops to zero.",
+				"d": "By measuring the spacing between the different base current curves."
+			},
+			"correctAnswer": "b",
+			"difficulty": "advanced"
+		},
+		{
+			"questionNumber": 6,
+			"question": "On an output characteristic plot, what does the vertical *spacing* between the different collector current curves (for constant steps in base current) represent?",
+			"answers": {
+				"a": "The Early effect",
+				"b": "The series resistance",
+				"c": "The high-injection knee",
+				"d": "The forward current gain (Beta)"
+			},
+			"correctAnswer": "d",
+			"difficulty": "beginner"
+		},
+		{
+			"questionNumber": 7,
+			"question": "The 'knee' of the output characteristic curve, where the collector current is low and rises sharply with voltage, represents the BJT transitioning *from* which region?",
+			"answers": {
+				"a": "From the saturation region to the forward-active region",
+				"b": "From the forward-active region to the breakdown region",
+				"c": "From the cutoff region to the saturation region",
+				"d": "From the reverse-active region to the forward-active region"
+			},
+			"correctAnswer": "a",
+			"difficulty": "intermediate"
+		},
+		{
+			"questionNumber": 8,
+			"question": "The slope of the collector current curve *in the saturation region* (near zero collector-emitter voltage) is primarily determined by which parameters?",
+			"answers": {
+				"a": "Forward Beta (`BF`) and Early Voltage (`VAF`)",
+				"b": "Base-emitter leakage (`ISE`) and its ideality factor (`NE`)",
+				"c": "Collector (`RC`) and Emitter (`RE`) series resistances",
+				"d": "Base resistance (`RB`) and junction capacitance (`CJE`)"
+			},
+			"correctAnswer": "c",
+			"difficulty": "advanced"
+		},
+		{
+			"questionNumber": 9,
+			"question": "If the extracted Collector Resistance (`RC`) is very large, how will this visually affect the output characteristics plot?",
+			"answers": {
+				"a": "The curves in the active region will be perfectly flat.",
+				"b": "The 'knee' of the curves will be 'softer' and the slope in the saturation region will be smaller.",
+				"c": "The curves will all intercept at zero voltage.",
+				"d": "The spacing between the curves will decrease."
+			},
+			"correctAnswer": "b",
+			"difficulty": "advanced"
+		},
+		{
+			"questionNumber": 10,
+			"question": "The sharp, uncontrolled increase in collector current at very high collector-emitter voltages is known as what?",
+			"answers": {
+				"a": "Saturation",
+				"b": "High-level injection",
+				"c": "Avalanche Breakdown",
+				"d": "Cutoff"
+			},
+			"correctAnswer": "c",
+			"difficulty": "intermediate"
+		}
   ]
 }
